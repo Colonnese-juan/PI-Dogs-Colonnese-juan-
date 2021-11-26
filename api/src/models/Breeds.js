@@ -6,19 +6,21 @@ module.exports = (sequelize) => {
   sequelize.define("Breeds", {
     ID: {
       type: DataTypes.UUID,
+      primaryKey: true,
+      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    temperament: {
+    temp: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     height: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
 
     weight: {

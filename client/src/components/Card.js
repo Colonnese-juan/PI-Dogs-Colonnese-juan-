@@ -1,12 +1,17 @@
 import React from "react";
 
-export default function Card({ name, image, temperament, weight }) {
+function Card({ name, image, temperament, weight, lifeSpan, id }) {
   return (
-    <div>
-      <img src={image} alt="img is not found" widht="200px" height="250px" />
-      <h3>{name}</h3>
-      <h5>{temperament}</h5>
-      <h5>{weight}</h5>
+    <div className="card-dog">
+      <div className="center">
+        <img src={image} alt={name} widht="100px" height="200px" />
+      </div>
+      <h3 className="title">{name}</h3>
+      <h5 className="temps">{temperament}</h5>
+      <h5 className="weight">{weight} kg</h5>
+      <h5 className="life_span">{lifeSpan}</h5>
     </div>
   );
 }
+
+export default Card;

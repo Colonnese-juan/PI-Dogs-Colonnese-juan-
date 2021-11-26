@@ -1,4 +1,60 @@
 .App {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #818a9c;
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 15px 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.card-dog {
+  min-height: 150px;
+  background: #666659aa;
+  border-color: 2px solid #fff;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin: 20px 0px;
+}
+
+.title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1rem;
+  text-decoration: none;
+}
+
+.btn-home {
+  background: chartreuse;
+  border-radius: 30px;
+  border-color: transparent;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 12px;
   text-align: center;
 }
 
